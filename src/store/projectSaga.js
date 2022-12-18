@@ -15,7 +15,6 @@ function* projectSaga() {
         })
         try {
             const projects = yield API.get("/projects")
-            console.log("🚀 -- file: projectSaga.js:8 -- yieldtakeEvery -- data", projects.data);
             const data = projects.data
             yield put({
                 type: FETCH_PROJECTS_FULFILLED,
