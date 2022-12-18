@@ -6,22 +6,23 @@ import './App.css'
 import { fetchProjects } from "./store/actions"
 // import useNotification from './customHooks/useNotification'
 import Map from './components/Map'
-// import "leaflet/dist/leaflet.css"
+import Portfolio from './pages/portfolio'
 
 function App() {
   const dispatch = useDispatch()
-  // useEffect(() => {
-  //   dispatch(fetchProjects())
-  // }, [])
+  useEffect(() => {
+    // dispatch(fetchProjects())
+  }, [])
   const { status, list } = useSelector(state => state.project)
   // const { Notice } = useNotification()
 
   return (
     <div className="App">
-      <Map />
+      <Portfolio />
       <div>{status}</div>
       {list.map((project, index) => <div key={index}><small >{project.title}</small><br /></div>)}
-      <Form />
+      {/* <Map /> */}
+      {/* <Form /> */}
     </div>
   )
 }
