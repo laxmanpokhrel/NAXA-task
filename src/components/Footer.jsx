@@ -5,18 +5,17 @@ export default () => {
     return (
         <footer className="h-[55vh] w-full flex justify-center mt-40 bg-white">
             <div className="cover w-[85%] flex flex-col gap-4">
-                <div className="collaboration-card w-full  h-1/2 border flex justify-center relative -translate-y-[50%]" style={{ background: "linear-gradient(90deg, #0055FF 0%, #07188E 100%)" }}>
+                <div className="collaboration-card w-full  min-h-1/2 flex justify-center relative -translate-y-[50%] py-5" style={{ background: "linear-gradient(90deg, #0055FF 0%, #07188E 100%)" }}>
                     {/* image here with absolute position */}
                     <div className=" flex flex-col gap-6 justify-center items-center text-white">
-                        <div className="flex justify-center w-full heading text-6xl center"> <h1>Seeking <span className="text-[#ffdc1c]">Collaboration</span>?</h1></div>
+                        <div className="flex justify-center w-full heading text-4xl center"> <h1>Seeking <span className="text-[#ffdc1c] text-center">Collaboration</span>?</h1></div>
                         <div className="flex justify-center w-full desc"><p className="w-3/5 text-center">We constantly look forward to exploring ideas, collaborations, and technical innovations. If you want to partner with us, we are just an email away.</p></div>
                         <div className="flex justify-center w-full btn"><LetsTalkBtn /></div>
                     </div>
                     {/* image here with absolute position */}
                 </div>
-
                 <div className="content w-full h-1/2">
-                    <div className="cover flex gap-4 ">
+                    <div className="cover flex gap-4  flex-wrap">
                         <div className="company-info w-[30%]">
                             <div className="logo">
                                 <div className="img-cover w-[40%] h-[40%]">

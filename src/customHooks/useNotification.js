@@ -15,9 +15,7 @@ export default () => {
         console.log("close Notice")
     }, []);
 
-    const Notice = useMemo(() => <div>this is a component from custom hook!</div>, []);
     return {
-        Notice,
         openNotice,
         closeNotice
     };

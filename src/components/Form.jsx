@@ -24,6 +24,7 @@ export default () => {
             let formData = new FormData()
             formData = serialiseFormData(formData, values)
             // dispatch post action
+            formik.resetForm()
         }
     })
     return (
